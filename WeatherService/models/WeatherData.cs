@@ -9,7 +9,7 @@ namespace WeatherService.models
     public class WeatherData
     {
         public string location { get; set; }
-        public string temperature { get; set; }
-        public string humidity { get; set; }
+        public double temperature { get; set; }
+        public double humidity { get; set; }
     }
 }
