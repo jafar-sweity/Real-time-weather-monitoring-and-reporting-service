@@ -19,7 +19,6 @@ namespace WeatherService.services
         {
             var json = File.ReadAllText(path);
             var config = JsonSerializer.Deserialize<Dictionary<string, BotConfiguration>>(json);
-
             var result = new Dictionary<BotTypes, BotConfiguration>();
 
             foreach (var item in config)

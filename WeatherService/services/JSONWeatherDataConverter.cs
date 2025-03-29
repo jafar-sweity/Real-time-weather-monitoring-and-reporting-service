@@ -11,6 +11,17 @@ namespace WeatherService.services
 {
     class JSONWeatherDataConverter : IWeatherDataConverter
     {
-        public WeatherData Convert(string input) => JsonSerializer.Deserialize<WeatherData>(input);
+        public WeatherData Convert(string input)
+        {
+            try
+            {
+                return JsonSerializer.Deserialize<WeatherData>(input);
+            }
+            catch (JsonException e)
+            {
+                Console.WriteLine($"Error converting JSON to WeatherData: {e.Message}");
+                return null;
+            }
+        }
     }
 }

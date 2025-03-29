@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WeatherService.interfaces
 {
-    interface IWeatherService
+    public interface IWeatherService
     {
         public void ProcessWeatherData(string input , IWeatherDataConverter converter);
     }

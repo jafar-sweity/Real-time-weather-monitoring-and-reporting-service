@@ -9,20 +9,19 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WeatherService.services
 {
-    class WeatherServices : IWeatherService
+    public class WeatherServices : IWeatherService
     {
         private readonly List<IWeatherBot> _bots;
 
-        WeatherServices (List<IWeatherBot> bots)
+        public WeatherServices(List<IWeatherBot> bots)
         {
             _bots = bots;
         }
+
         public void ProcessWeatherData(string input, IWeatherDataConverter converter)
         {
             var data = converter.Convert(input);
             NotifyBots(data);
-
-
         }
 
         public void NotifyBots(WeatherData weatherData)
