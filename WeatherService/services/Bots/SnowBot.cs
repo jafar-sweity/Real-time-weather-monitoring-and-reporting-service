@@ -13,10 +13,10 @@ namespace WeatherService.services.Bots
         private double _threshold;
         private string _message;
 
-        public SnowBot(double threshold, string message)
+        public SnowBot(BotConfiguration botConfiguration)
         {
-            _threshold = threshold;
-            _message = message;
+            _threshold =  botConfiguration.Threshold;
+            _message = botConfiguration.Message;
         }
 
         public void ActivateBot(WeatherData weatherData)
