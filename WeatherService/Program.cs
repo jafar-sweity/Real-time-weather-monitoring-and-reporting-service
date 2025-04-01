@@ -1,5 +1,4 @@
-﻿using WeatherService.interfaces;
-using WeatherService.services;
+﻿using WeatherService.services;
 using WeatherService.Utilities;
 
 public class Program

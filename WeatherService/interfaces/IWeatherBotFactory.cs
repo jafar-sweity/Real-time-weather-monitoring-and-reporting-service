@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WeatherService.models.Enum;
+﻿using WeatherService.models.Enum;
 
 namespace WeatherService.interfaces
 {

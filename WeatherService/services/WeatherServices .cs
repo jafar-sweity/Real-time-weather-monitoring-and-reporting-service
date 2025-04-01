@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WeatherService.interfaces;
+﻿using WeatherService.interfaces;
 using WeatherService.models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WeatherService.services
 {

@@ -1,13 +1,4 @@
-﻿using MongoDB.Bson.IO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Json;
-using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-using WeatherService.interfaces;
+﻿using System.Text.Json;
 using WeatherService.models;
 using WeatherService.models.Enum;
 
