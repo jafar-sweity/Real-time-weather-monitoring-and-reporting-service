@@ -10,7 +10,7 @@ namespace WeatherService.services
         {
             try
             {
-                return JsonSerializer.Deserialize<WeatherData>(input);
+                return System.Text.Json.JsonSerializer.Deserialize<WeatherData>(input);
             }
             catch (JsonException e)
             {
